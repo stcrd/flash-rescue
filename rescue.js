@@ -18,6 +18,7 @@ const main = async () => {
     exit(1);
   }
 
+  // currently assumes local ethereum node. To use node providers, set them in the parentheses (see their docs).
   const provider = new ethers.JsonRpcProvider();
 
   const authSigner = ethers.Wallet.createRandom();
